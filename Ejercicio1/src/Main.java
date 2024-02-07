@@ -1,17 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
-        int diasEnUnAno = 365;
-        int horasEnUnDia = 24;
-        int minutosEnUnaHora = 60;
-        int segundosEnUnMinuto = 60;
+        int dias = 365;
+        int horas = 24;
+        int mins = 60;
+        int segs = 60;
 
-        int segundosEnUnAno = calcularSegundosEnAnio(diasEnUnAno, horasEnUnDia, minutosEnUnaHora, segundosEnUnMinuto);
+        int segsAno = calcularSegundosEnAnio(dias, horas, mins, segs);
 
-        System.out.println("El número de segundos en un año es: " + segundosEnUnAno);
+        System.out.println("El número de segundos en un año es: " + segsAno);
     }
 
-    public static int calcularSegundosEnAnio(int dias, int horas, int minutos, int segundos) {
-        return dias * horas * minutos * segundos;
+    public static int calcularSegundosEnAnio(int dias, int horas, int mins, int segs) {
+        return dias * horas * mins * segs;
     }
 }
